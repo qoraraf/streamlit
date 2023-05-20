@@ -22,22 +22,13 @@ def display_sidebar():
     personal_touch = st.sidebar.text_area("Add your personal touch")
     
     # Generate a detailed prompt
-    prompt = f"""
-    Generate an novel design with listed words.
-    The generated image should be hd, 
-    photorealistic image of a woman wearing a traditional Saudi abaya, 
-    standing confidently in front of a camera. 
-    She should be positioned against a simple, 
-    uncluttered background that allows the viewer to focus on her attire and pose. 
-    The image should be well-lit and showcase the intricate details of the abaya, 
-    while maintaining a natural and authentic appearance
 
-    - Gender: {male_female}
-    - Age Group: {kid_Adult}
-    - Color: {color}
-    - Culture: {culture}
-    - Era: {Era}
-    - Personal Touch: {personal_touch}
+    prompt = f"""
+    Generate an novel pattern with listed items. The pattern wiil be used on the fabric to create Saudi abaya
+    - 4k image, 
+    - {color}
+    - {personal_touch}
+
     """
 
     # Display the prompt at the end of the sidebar
